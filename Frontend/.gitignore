@@ -19,7 +19,7 @@ cypress.config.ts
 .env.test.local
 .env.production.local
 
-.data
+/data
 
 npm-debug.log*
 yarn-debug.log*

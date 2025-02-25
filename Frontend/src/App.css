@@ -1,0 +1,293 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300;400;500;700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+  letter-spacing: 0.5px;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+
+}
+
+.demo-badge {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black */
+  color: #fff; /* White text */
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: bold;
+  z-index: 9999; /* Make sure it's on top of everything */
+  pointer-events: none; /* Ensures users can still interact with the page */
+  user-select: none; /* Prevents text selection */
+}
+
+@media (max-width: 768px) {
+  .demo-badge {
+    font-size: 12px;
+    padding: 8px 16px;
+  }
+}
+
+.button{
+  color:#ed7623;
+  border: none;
+  border-radius: 0;
+
+}
+/* Log/Reg */
+.container-page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.auth-container{
+ width: auto;
+ padding: 0.5rem;
+}
+
+/* .auth-item{
+  margin: 1rem auto 1rem;
+  border-radius: 10 ;
+  border: solid 1px #dedede !important;
+  padding: 0.7rem 0.7rem;
+  margin-top: 1.2rem;
+  background-color: #fff;
+} */
+.input-login-page{
+  border: solid 1px #6d7aa0;
+  border-radius: 3px;
+  margin: 0.25rem 0;
+  padding: 0.75rem;
+  font-family:inherit;
+}
+/* .input-pass-login{
+  border: solid 1px #dedede;
+  border-radius: 0;
+  font-family:inherit;
+} */
+.auth-container h1{
+  text-align: center;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.ant-layout {
+  position: relative;
+}
+
+.transparent-layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2); /* Adjust the transparency as needed */
+  z-index: 9990; /* Make sure it's below the Sider but above the Content */
+  /* cursor: auto; */
+  transition: opacity 0.3s ease; /* Add a transition for a smoother effect */
+}
+
+.transparent-layer.collapsed {
+  opacity: 0;
+  pointer-events: none;
+}
+.btn-menu-collapse:hover{
+  color: none !important;
+  border-color: none !important;
+}
+/* antd btn primary */
+.ant-btn:hover{
+  color: #7e90be ;
+  /* border-color: #7e90be ; */
+}
+.ant-btn-dangerous:hover{
+  color: #ff7875 !important;
+  border-color: #ff7875 !important; 
+}
+
+/* antd btn primary */
+.ant-btn-primary {
+  background-color: #6b7aa1;
+  border: none;
+}
+.ant-btn-primary:hover{
+  color: white !important;
+  background-color: #7e90be !important;
+}
+.ant-btn-primary.ant-btn-dangerous:hover {
+  color: white !important;
+  background-color: #ff7875 !important; /* Hover background color */
+  border-color: none; /* Hover border color */
+}
+.auth-container button {
+  width: 20%;
+  background-color: #6b7aa1;
+  border-color: #505c79;
+  border-radius: 3px;
+  font-size: 13px;
+  padding: 1.2rem 3.5rem;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centers horizontally */
+  align-items: center;
+  margin: 0.5rem auto ;
+  box-shadow: 0px 5px 10px 2px rgba(0, 0, 0, 0.28) !important;
+}
+.auth-container button:hover{
+  background-color: #7e90be !important;
+  border-color: none !important;
+  box-shadow: 0px 5px 11px 2px rgba(0, 0, 0, 0.28) !important;
+}
+
+.ant-menu-item-selected {
+  background-color: #8AA2E1 !important;
+  border-radius: 0 !important;
+
+}
+.custom-table .ant-table-filter-trigger-active, /* Filter icon when active */
+.custom-table .ant-table-column-sorter-up.active, /* Ascending sorter when active */
+.custom-table .ant-table-column-sorter-down.active { /* Descending sorter when active */
+  color: #11324d; /* Your hover color */
+}
+/* .custom-table .ant-table-filter-trigger:hover,
+.custom-table .ant-table-column-sorter .anticon:hover {
+  color: #7e90be; 
+} */
+/* .link-hover :hover{
+  background-color: #7e90be !important;
+} */
+
+/* .list-form {
+  border: 2px solid #11324d;
+  margin: 1rem 0;
+  padding: 1rem;
+  color: #11324d;
+} */
+
+/* .list-form:hover {
+  border-color: #7dadcd;
+} */
+
+/* faip mhs */
+.form-item-row{
+  margin-bottom: 5px;
+}
+.ant-table-thead .ant-table-cell {
+  background-color: #c2d0c1cd !important;
+  border-color: #c2d0c193 !important;
+  border-radius: 0 !important;
+}
+
+/* .list-form.hovered {
+  border-color: #7dadcd;
+} */
+
+/* .list-form-item {
+  color: inherit;
+}
+.list-form-item.hovered {
+  color: #7dadcd;
+} */
+
+.btn-home :hover{
+  background-color: #7e90be !important;
+}
+
+.bottom-auth{
+  text-align: center;
+  font-weight: normal;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  color: #666;
+}
+.bottom-auth p{
+  font-size: 14px;
+  margin-bottom: 2.5rem;
+  position: absolute;
+  bottom: 0;
+}
+.bottom-auth a{
+  color: #484a4b;
+}
+.bottom-auth a:hover{
+  color: #666;
+}
+
+.ant-checkbox-group-item {
+  display: block;
+  margin-right: 0;
+}
+
+/* TABPAGE */
+.form-klaim-list {
+  height: 200px;
+  overflow-y: scroll;
+  border: 1px solid #dddddd;
+  padding: 5px;
+}
+
+.ant-input-number-handler-wrap {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+.ant-input-number:hover .ant-input-number-handler-wrap {
+  display: block !important;
+  opacity: 1 !important;
+}
+
+.header-faip-dosen {
+  display: flex;
+  flex-direction: row;
+  padding: 1rem 0;
+}
+.header-faip-dosen-search{
+  margin-left: auto;
+}
+
+@media (max-width: 500px) {
+  .header-faip-dosen {
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  /* For tablets: */
+  .auth-container {
+    width: 400px;
+  }
+  
+}
+@media only screen and (max-width: 500px) {
+  /* For tablets: */
+  .header-faip-dosen{
+    display: flex;
+    flex-direction: column;
+   }
+   .header-faip-dosen-search{
+    margin-left: 0;
+    margin-top: 10px;
+  }
+}
+@media only screen and (max-height: 500px) {
+  .auth-container{
+    height: 100%;
+    padding: 0;
+    font-size: 10px;
+   }
+  
+}

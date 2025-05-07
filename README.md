@@ -5,7 +5,8 @@ note. Kode tidak sepenuhnya tersedia atau parsial dan tidak mencerminkan produk 
 <p align="center" width="70%">
   <img src="https://github.com/falzee/demo-konversi/blob/main/img/mern-stack-01.webp" alt="lib-dk" />
 </p>
-<h1>MERN Stack</h1>
+MERN Stack
+
 - Frontend : React JS
 - Backend : Node.js + Express JS
 - Database : MongoDB

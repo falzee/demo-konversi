@@ -2,7 +2,7 @@
 note. Kode tidak sepenuhnya tersedia atau parsial dan tidak mencerminkan produk yang sebenarnya.
 
 ## Framework / Library
-<p align="center" width="70%">
+<p align="center" width="300px">
   <img src="https://github.com/falzee/demo-konversi/blob/main/img/mern-stack-01.webp" alt="lib-dk" />
 </p>
 MERN Stack
